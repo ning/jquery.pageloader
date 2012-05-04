@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="../lib/jquery.css-transitions.js"></script>
+    <script src="../jquery.pageloader.js"></script>
+    <link rel="stylesheet" href="../jquery.pageloader.css"/>
+    <link rel="stylesheet" href="demo.css"/>
+    <script>
+      $(function () {
+        $("#pageloader").pageloader({
+          idPrefix: 'page-',
+          urlSuffix: '.html',
+          transition: 'flip',
+        }).pageloader('load','cover');
+      });
+    </script>
+    <title>Pageloader Demo</title>
+  </head>
+  <body>
+    <div class="viewer">
+      <div id="pageloader" class="pageloader" >
+        <div class="_sequence">
+        </div>
+      </div>
+      <p class="note">Reloading will result in a 404 error, since there is no URL rewriting for this static page.  <a href="index.html">Restart here.</a>
+    </div>
+  </body>
+</html>

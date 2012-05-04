@@ -1,0 +1,34 @@
+/**
+ * CSS required for jquery.pageloader.js
+ */
+
+.pageloader {
+    overflow: hidden;
+}
+
+.pageloader > ._sequence {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+.pageloader > ._sequence > * {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.pageloader > ._sequence > ._current {
+    display: block;
+}
