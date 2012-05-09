@@ -2,12 +2,13 @@
 
 [`jquery.pageloader`](jquery.pageloader.js) is a jQuery plug-in which
 implements Ajax loading of multiple content pages into the DOM,
-and offers a variety of page transitions to move from page to page.
-Pages may be flipped programmatically, or using touch or mouse swipe gestures.
-Browser history is supported using HTML5 `popstate` events.
+and offers a variety of page transitions to move from page to page
+with animated real-time response to swipe gestures.
 
 `jquery.pageloader` is designed for use in a mobile or tablet webapp to
 provide a native-like page-flipping experience.
+Pages may be flipped programmatically, or using touch or mouse swipe gestures.
+Browser history is supported using HTML5 `popstate` events.
 
 ## Invocation
 
