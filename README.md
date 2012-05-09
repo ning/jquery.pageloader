@@ -1,9 +1,10 @@
 # `jquery.pageloader`
 
-`jquery.pageloader` is a jQuery plug-in which implements Ajax loading of
-multiple content pages into the DOM, and offers a variety of page
-transitions to move from page to page.  Browser history is supported
-using HTML5 `popstate` events.
+[`jquery.pageloader`](jquery.pageloader.js) is a jQuery plug-in which
+implements Ajax loading of multiple content pages into the DOM,
+and offers a variety of page transitions to move from page to page.
+Pages may be flipped programmatically, or using touch or mouse swipe gestures.
+Browser history is supported using HTML5 `popstate` events.
 
 `jquery.pageloader` is designed for use in a mobile or tablet webapp to
 provide a native-like page-flipping experience.
@@ -76,14 +77,19 @@ programmatically using the `load` method, or automatically by
 
 ## CSS
 
-The file `jquery.pageloader.css` provides the CSS which is required
+The file [`jquery.pageloader.css`](jquery.pageloader.css) provides the CSS which is required
 for proper functioning of the plug-in.  The pageloader and its pages
 may also be styled more specifically for the particular application.
 
+## Events
+
+`jquery.pageloader` triggers a `ready` event on each page, once the
+DOM is ready.  
+
 ## Dependencies
 
-`jquery.pageloader` requires the `animateWithCss` method from Aza Raskin's
-[`jquery.css-transitions`](https://gist.github.com/435054).
+`jquery.pageloader` requires the `animateWithCss` method as defined
+by Aza Raskin's [`jquery.css-transitions`](https://gist.github.com/435054).
 A copy is provided in the `/lib` folder for the purposes of running the demo.
 
 ## Demo
