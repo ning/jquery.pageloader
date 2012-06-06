@@ -12,29 +12,50 @@ body {
 }
 
 .pageloader {
-    height: 600px;
-    width: 400px;
-    margin: 100px auto 0;
+    height: 66%;
+    width: 75%;
+    margin: 0 auto 0;
 }
 
 .page {
     background: #ccc;
     border: 1px solid #888;
     color: #333;
-    padding: 100px 30px;
+    padding: 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(255,255,255,.5);
 }
 
-p.note {
+.viewer > p {
     width: 300px;
     margin: 1em auto;
     color: #666;
     text-align: center;
-    font-size: 75%;
 }
 
-p.note a {
+.viewer a {
     color: #ccc;
     white-space: nowrap;
 }
+
+p {
+    max-width: 300px;
+    margin: 1em auto;
+}
+
+.page a {
+    color: black;
+}
+
+.page h1 {
+    margin-top: 0;
+    font-size: 1.25em;
+}
+
+p.note {
+    font-size: 75%;
+}
+

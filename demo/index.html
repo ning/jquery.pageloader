@@ -1,6 +1,7 @@
 <!doctype HTML>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="../lib/jquery.css-transitions.js"></script>
     <script src="../jquery.pageloader.js"></script>
@@ -13,12 +14,29 @@
           urlSuffix: '.html',
           transition: 'flip',
         }).pageloader('load','cover');
+        $("select.optionSelector").change( function () {
+          var options = {};
+          options[ $(this).attr('name') ] = $(this).val();
+          $("#pageloader").pageloader( 'configure', options );
+        });
       });
     </script>
     <title>Pageloader Demo</title>
   </head>
   <body>
     <div class="viewer">
+      <p>
+        <label>Transition:
+          <select name="transition" class="optionSelector">
+            <option value="flip" selected>Flip</option>
+            <option value="slide">Slide</option>
+            <option value="fade">Fade</option>
+            <option value="reveal">Reveal</option>
+            <option value="spin">Spin</option>
+            <option value="none">(none)</option>
+          </select>
+        </label>
+      </p>
       <div id="pageloader" class="pageloader" >
         <div class="_sequence">
         </div>
