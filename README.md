@@ -1,6 +1,6 @@
 # `jquery.pageloader`
 
-[`jquery.pageloader`](jquery.pageloader.js) is a jQuery plug-in which
+`jquery.pageloader` is a jQuery plug-in which
 implements Ajax loading of multiple content pages into the DOM,
 and offers a variety of page transitions to move from page to page
 with animated real-time response to swipe gestures.
@@ -78,14 +78,14 @@ programmatically using the `load` method, or automatically by
 
 ## CSS
 
-The file [`jquery.pageloader.css`](jquery.pageloader.css) provides the CSS which is required
+The file `jquery.pageloader.css` provides the CSS which is required
 for proper functioning of the plug-in.  The pageloader and its pages
 may also be styled more specifically for the particular application.
 
 ## Events
 
 `jquery.pageloader` triggers a `ready` event on each page, once the
-DOM is ready.  
+DOM is ready.
 
 ## Dependencies
 
@@ -95,4 +95,4 @@ A copy is provided in the `/lib` folder for the purposes of running the demo.
 
 ## Demo
 
-A [demo](./demo) is provided in the `demo` directory.
+A demo is provided in the `demo` directory.
